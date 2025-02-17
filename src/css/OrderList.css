@@ -1,0 +1,133 @@
+/* Container Styling */
+.order-list-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Table Styling */
+.order-table {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    animation: slideUp 0.5s ease-in-out;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.order-table thead {
+    background-color: #007bff;
+    color: white;
+}
+
+.order-table th,
+.order-table td {
+    padding: 12px;
+    text-align: center; /* Center-align text */
+    border: 1px solid #dee2e6;
+    vertical-align: middle; /* Center-align content vertically */
+}
+
+.order-table th {
+    font-weight: bold;
+}
+
+.header-icon {
+    margin-right: 8px;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+/* Table Row Styling */
+.order-row {
+    transition: all 0.3s ease-in-out;
+    border: 2px solid transparent; /* Add a transparent border */
+}
+
+.order-row:hover {
+    border-radius: 20px;
+    background-color: #e9ecef; /* Light gray background on hover */
+    transform: translateY(-2px); /* Slight upward movement */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 
+                0 -4px 12px rgba(0, 0, 0, 0.1), 
+                4px 0 12px rgba(0, 0, 0, 0.1), 
+                -4px 0 12px rgba(0, 0, 0, 0.1); /* Shadow on all sides */
+}
+
+/* Product Image Styling */
+.product-image {
+    border-radius: 8px;
+    border: 2px solid #007bff;
+    transition: transform 0.3s ease-in-out;
+    display: block; /* Ensure the image is centered */
+    margin: 0 auto; /* Center-align the image */
+}
+
+.product-image:hover {
+    transform: scale(1.1);
+}
+
+/* User Button Styling */
+.user-button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center-align button content */
+    transition: all 0.3s ease-in-out;
+    margin: 0 auto; /* Center-align the button */
+}
+
+.user-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+.button-icon {
+    margin-right: 8px;
+}
+
+/* Modal Styling */
+.user-details {
+    text-align: center;
+}
+
+.user-image {
+    border-radius: 50%;
+    border: 2px solid #007bff;
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.user-image:hover {
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

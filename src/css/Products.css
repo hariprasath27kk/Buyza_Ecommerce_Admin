@@ -1,0 +1,156 @@
+/* Container Styling */
+.products-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Search Container Styling */
+.search-container {
+    position: relative;
+    width: 40%;
+}
+
+.search-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #007bff;
+    font-size: 18px;
+    z-index: 2;
+}
+
+.search-input {
+    border-radius: 20px;
+    border: 2px solid #007bff;
+    padding: 10px 20px 10px 40px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-input:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Add Product Button Styling */
+.add-product-btn {
+    background-color: darkorange;
+    border: 2px solid darkorange;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.add-product-btn:hover {
+    background-color: #ff8c00;
+    border-color: #ff8c00;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 140, 0, 0.3);
+}
+
+/* Table Styling */
+.products-table {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    animation: slideUp 0.5s ease-in-out;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.products-table thead {
+    background-color: #007bff;
+    color: white;
+}
+
+.products-table th,
+.products-table td {
+    padding: 12px;
+    text-align: center; /* Center-align text */
+    border: 1px solid #dee2e6;
+    vertical-align: middle; /* Center-align content vertically */
+}
+
+.products-table th {
+    font-weight: bold;
+}
+
+/* Table Row Styling */
+.product-row {
+    transition: all 0.3s ease-in-out;
+}
+
+.product-row:hover {
+    background-color: #e9ecef;
+    transform: scale(1.02);
+}
+
+/* Product Image Styling */
+.product-image {
+    border-radius: 8px;
+    border: 2px solid #007bff;
+    transition: transform 0.3s ease-in-out;
+    display: block; /* Ensure the image is centered */
+    margin: 0 auto; /* Center-align the image */
+}
+
+.product-image:hover {
+    transform: scale(1.1);
+}
+
+/* Action Icons Styling */
+.actions-cell {
+    width: 150px;
+}
+
+.action-icon {
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.edit-icon {
+    color: #28a745;
+}
+
+.edit-icon:hover {
+    color: #218838;
+    transform: scale(1.2);
+}
+
+.delete-icon {
+    color: #dc3545;
+}
+
+.delete-icon:hover {
+    color: #c82333;
+    transform: scale(1.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

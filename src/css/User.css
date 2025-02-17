@@ -1,0 +1,147 @@
+/* Container Styling */
+.users-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Search Container Styling */
+/* Search Container Styling */
+.search-container {
+    position: relative;
+    width: 50%;
+}
+
+.search-icon {
+    position: absolute;
+    right: 12px; /* Adjusted left position */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #007bff;
+    font-size: 18px;
+    z-index: 2; /* Ensure the icon is above the input */
+}
+
+.search-input {
+    border-radius: 20px;
+    border: 2px solid #007bff;
+    padding: 10px 20px 10px 40px; /* Increased left padding to accommodate the icon */
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    z-index: 1; /* Ensure the input is below the icon */
+}
+
+.search-input:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Add User Button Styling */
+.add-user-btn {
+    background-color: #007bff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.add-user-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Table Styling */
+.users-table {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    animation: slideUp 0.5s ease-in-out;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.users-table thead {
+    background-color: #007bff;
+    color: white;
+}
+
+.users-table th,
+.users-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #dee2e6;
+}
+
+.users-table th {
+    font-weight: bold;
+}
+
+.header-icon {
+    margin-right: 8px;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.users-table tbody tr {
+    transition: all 0.3s ease-in-out;
+}
+
+.users-table tbody tr:hover {
+    background-color: #e9ecef;
+    transform: scale(1.02);
+}
+
+/* Action Icons Styling */
+.action-icon {
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.edit-icon {
+    color: #28a745;
+    margin-right: 15px;
+}
+
+.edit-icon:hover {
+    color: #218838;
+    transform: scale(1.2);
+}
+
+.delete-icon {
+    color: #dc3545;
+}
+
+.delete-icon:hover {
+    color: #c82333;
+    transform: scale(1.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,141 @@
+/* Custom Navbar Styling */
+.custom-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #343a40 !important;
+    border-bottom: 2px solid #007bff;
+    animation: slideDown 0.5s ease-in-out;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #fff !important;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.dashboard-icon {
+    margin-right: 10px;
+    font-size: 1.8rem;
+    color: #007bff;
+}
+
+.navbar-toggle {
+    border-color: #007bff;
+}
+
+.nav-link {
+    color: #fff !important;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link:hover {
+    color: #007bff !important;
+}
+
+.nav-icon {
+    margin-right: 8px;
+    font-size: 1.2rem;
+}
+
+.account-dropdown {
+    color: #fff !important;
+    display: flex;
+    align-items: center;
+}
+
+.account-icon {
+    margin-right: 5px;
+    font-size: 1.2rem;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.profile-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile-image {
+    border-radius: 50%;
+    border: 2px solid #007bff;
+    margin-right: 10px;
+}
+
+.profile-username {
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.logout-btn {
+    background-color: #dc3545;
+    border: none;
+    padding: 5px 15px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+
+.logout-btn:hover {
+    background-color: #c82333;
+}
+
+.logout-icon {
+    margin-right: 8px;
+}
+
+.dropdown-item {
+    color: #fff !important;
+    font-size: 1rem;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-item:hover {
+    background-color: #007bff;
+    color: #fff !important;
+}
+
+.dropdown-icon {
+    margin-right: 8px;
+}
+
+.dropdown-menu[data-bs-popper] {
+    left: -47px !important;
+    width: 185px !important;
+}
+
+/* Animations */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
